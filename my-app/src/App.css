@@ -1,0 +1,754 @@
+/* App.css */
+.App {
+  display:flow-root;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+/* Header.css */
+
+header {
+  background-color: #054e8ffe; 
+  color: #072af1; 
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline; 
+  margin-right: 100px; 
+}
+
+nav ul li a {
+  color: #fbfbfc; 
+  text-decoration: none; 
+}
+
+nav ul li a:hover {
+  color: #c0dcc8; 
+}
+
+/* Contact.css */
+
+.contact-container {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  color: #333;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.contact-container:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-container h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.contact-container h3 {
+  color: #666;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.contact-container p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 15px;
+  color: #4d94ff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+  color: #1a75ff;
+}
+
+.back-button {
+  font-size: 0.8rem; 
+  padding: 1px 0px; 
+  border-radius: 5px; 
+  background-color: #4d94ff;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+  display: block; 
+  margin: 680px; 
+}
+
+.back-button:hover {
+  background-color: #1a75ff;
+}
+/* News */
+
+.news-training-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-left: 50px; 
+  color: #333;
+}
+.news-training-container ul {
+  list-style-type: auto;
+}
+
+.news-training-container li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  transition: background-color 0.3s ease;
+}
+
+.news-training-container li:hover {
+  background-color: #f4f4f4;
+}
+
+.news-training-container h3 {
+  font-size: 18px;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.news-training-container h3:hover {
+  color: #0056b3;
+}
+
+.news-training-container a {
+  text-decoration: auto;
+  color: inherit;
+  cursor: pointer;
+}
+
+.news-training-container {
+  margin-bottom: 0px;
+}
+
+.back-button-container {
+  position: fixed;
+  bottom: 5px; 
+  right: 20px;
+  font-size: 14px;
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button-container:hover {
+  background-color: #0056b3;
+}
+
+/* NewsDetails */
+
+.news-details-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.news-details-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.news-details-container p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  display: inline-block;
+  background-color: #09a9f3;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.back-button {
+  background-color: #09a9f3;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: center;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+/* TournamentsCalendar */
+
+.tournament-calendar {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.calendar-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.calendar-list li {
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+.calendar-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.tournament-date {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.tournament-name {
+  font-style: italic;
+}
+
+.tournament-details {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  position: relative; 
+}
+
+.back-button {
+  font-size: 0.8rem; 
+  padding: 5px 15px; 
+  border-radius: 20px;
+  background-color: #4d94ff;
+  color: #fff;
+  text-align: center; 
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+  display: inline-block; 
+  position: absolute; 
+  top: 100px;
+  right: 20px;
+}
+
+.back-button:hover {
+  background-color: #1a75ff;
+}
+
+/* MatchResults */
+
+.match-results-container {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.match-results-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+  background-color: #e0e0e0;
+}
+
+@media screen and (max-width: 600px) {
+  table th,
+  table td {
+    padding: 8px;
+  }
+
+  .match-results-container {
+    padding: 10px;
+  }
+}
+.match-results-container {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.match-results-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center; 
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.selected-result {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.selected-result h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.selected-result p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+  .back-button {
+    position: relative;
+    top: 4cm; 
+    right: -700px; 
+  }
+
+ /*TennisPlayer */
+ .tennis-players-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.players-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.player-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 15px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.player-card:hover {
+  transform: scale(1.05);
+}
+
+.player-info {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  background-color: #f0f0f0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 800px; 
+  max-width: 60%; 
+}
+
+.player-info.active {
+  display: block;
+}
+.back-button {
+  font-size: 0.8rem; 
+  padding: 5px 15px; 
+  border-radius: 20px; 
+  background-color: #4d94ff;
+  color: #fff;
+  text-align: center;
+  text-decoration: none; 
+  transition: background-color 0.3s ease-in-out;
+  display: inline-block; 
+  position: relative; 
+  top: -700px; 
+}
+
+
+/* TennisCourt */
+
+.tennis-court {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.tennis-court img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.court-details {
+  padding: 20px;
+}
+
+.court-details h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.court-details p {
+  margin: 10px 0;
+}
+
+.court-details strong {
+  font-weight: bold;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.button-container button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+.success-message {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.success-message p {
+  margin: 0;
+}
+
+
+/* TennisCourtsList */
+
+.tennis-courts-list {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tennis-courts-list h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.courts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.tennis-court {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tennis-court img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+  object-position: center;
+}
+
+.court-details {
+  padding: 15px;
+}
+
+.court-details h3 {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.court-details p {
+  margin: 8px 0;
+}
+
+.court-details strong {
+  font-weight: bold;
+}
+
+.court-details button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.court-details button:hover {
+  background-color: #0056b3;
+}
+
+/* ReservationForm */
+
+.reservation-form {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.reservation-form h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.reservation-form p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.reservation-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.reservation-form label {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.reservation-form input,
+.reservation-form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.reservation-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reservation-form button:hover {
+  background-color: #0056b3;
+}
+
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reservation-form {
+  animation: slideIn 0.5s ease;
+}
+
+/* Home */
+.home {
+  position: relative;
+  height: 100vh; 
+  background-image: url('/public/images/90.jpg'); 
+  background-size: cover;
+  background-position: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(209, 244, 8); 
+}
+
+.tennis-world {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  animation: textGradient 3s ease infinite alternate; 
+  position: relative; 
+  top: -1cm; 
+  left: -9cm; 
+  transform: translate(5cm, -3cm);
+}
+
+.video-container {
+  margin-bottom: 2rem; 
+}
+
+.video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-modal iframe {
+  width: 80%;
+  height: 80%;
+}
+
+.tennis-racket-left {
+  position: absolute;
+  top: 4cm; 
+  left: 120px; 
+}
+
+.tennis-racket-right {
+  position: absolute;
+  top: 15cm; 
+  right: 60px; 
+}
+
+.tennis-racket-left, .tennis-racket-right {
+  animation: iconGradient 10s ease infinite alternate; 
+}
+
+@keyframes textGradient {
+  0% {
+    color: rgb(209, 244, 8); 
+  }
+  25% {
+    color: rgb(24, 231, 242); 
+  }
+  50% {
+    color: rgb(248, 87, 166); 
+  }
+  75% {
+    color: rgb(255, 191, 0); 
+  }
+  100% {
+    color: rgb(209, 244, 8); 
+  }
+}
+
+@keyframes iconGradient {
+  0% {
+    color: rgb(209, 244, 8); 
+  }
+  25% {
+    color: rgb(24, 231, 242); 
+  }
+  50% {
+    color: rgb(248, 87, 166); 
+  }
+  75% {
+    color: rgb(105, 96, 202); 
+  }
+  100% {
+    color: rgb(201, 215, 221); 
+  }
+}
