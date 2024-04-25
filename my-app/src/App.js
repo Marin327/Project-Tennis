@@ -3,7 +3,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
 import Contact from './Contact/Contact';
 import Header from './Header/Header';
-import Home from './Home/Home'; // Добавяме компонента Home
+import Home from './Home/Home'; 
 import MatchResults from './MatchResults/MatchResults';
 import News from './News/News';
 import NewsDetails from './NewsDetails/NewsDetails';
@@ -13,6 +13,7 @@ import TennisCourtList from './TennisCourtList/TennisCourtList';
 import TennisPlayers from './TennisPlayers/TennisPlayers';
 import TournamentDetails from './TournamentDetails/TournamentDetails';
 import TournamentsCalendar from './TournamentsCalendar/TournamentsCalendar';
+import TrainingSection from './TrainingSection/TrainingSection'; 
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path='/TennisCourt' element={<TennisCourt  />} />
           <Route path='/TennisCourtList' element={<TennisCourtList  />} />
           <Route path="/reservation" element={ReservationForm} />
+          <Route path="/training" element={<TrainingSection />} /> 
         </Routes>
       </div>
     </Router>
