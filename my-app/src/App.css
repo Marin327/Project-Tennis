@@ -752,3 +752,51 @@ table tr:hover {
     color: rgb(201, 215, 221); 
   }
 }
+
+/* TrainingSection.css */
+.training-section {
+  margin: 20px 0;
+}
+
+.training-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.training-item {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #14ece8;
+  border-radius: 75px;
+  background-color: #0bd3ed;
+  transition: transform 0.3s ease;
+}
+
+.training-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1); 
+}
+
+.training-item h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.training-item ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.training-item ul li {
+  margin-bottom: 10px;
+}
+
+.training-item ul li a {
+  text-decoration: none;
+  color: #e0ede4;
+  transition: color 0.3s ease;
+}
+
+.training-item ul li a:hover {
+  color: #0b1001;
+}
