@@ -14,6 +14,7 @@ function Header() {
                     <li><a href="/TournamentsCalendar"><FaCalendarAlt /> Турнирен Календар</a></li>
                     <li><a href="/MatchResults"><FaClipboardList /> Резултати на мачове</a></li>
                     <li><a href="/Contact"><FaPhoneAlt /> Контакти</a></li>
+                    <li><a href="/training"><FaClipboardList /> Обучение и тренировки</a></li> 
                 </ul>
             </nav>
         </header>
