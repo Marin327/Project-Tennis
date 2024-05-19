@@ -56,17 +56,22 @@ const newsData = [
 ];
 
 const NewsDetails = () => {
-  let { id } = useParams();
-
+  const { id } = useParams();
   const newsItem = newsData.find(item => item.id === parseInt(id));
+
+  if (!newsItem) {
+    return <div>Новината не е намерена.</div>;
+  }
 
   return (
     <div className="news-details-container">
       <h2>{newsItem.title}</h2>
       <p>{newsItem.content}</p>
-      <Link to="/news" className="back-button">Назад</Link>
-    </div>
+      <div>
+        <Link to="/news" className="back-button">Назад</Link>
+      </div>
+      </div>
   );
-}
+};
 
 export default NewsDetails;
