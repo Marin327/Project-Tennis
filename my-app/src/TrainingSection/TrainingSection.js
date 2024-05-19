@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../App.css';
 
 const TrainingSection = () => {
   return (
+    <div>
       <div className="training-content">
         <div className="training-item">
           <h3>Видеоуроци</h3>
@@ -30,6 +32,10 @@ const TrainingSection = () => {
           </ul>
         </div>
       </div>
+      <div>
+        <Link to="/" className="back-button">Назад</Link>
+      </div>
+    </div>
   );
 }
 
