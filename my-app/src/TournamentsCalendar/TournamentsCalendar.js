@@ -33,7 +33,7 @@ const handleTournamentClick = (tournament) => {
 };
 
 return (
-  <div className="tournament-calendar">
+    <div className="tournament-calendar">
     <h2>Календар за тенис турнирите 2024 г.</h2>
     <ul className='calendar-list'>
       {tournaments.map((tournament) => (
@@ -48,7 +48,9 @@ return (
         </li>
       ))}
     </ul>
-    <Link to='/' className="back-button">Назад</Link>
+    <div className="button-container">
+      <Link to='/' className="back-button">Назад</Link>
+    </div>
   </div>
 );
 };
