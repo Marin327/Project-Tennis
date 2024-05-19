@@ -1,4 +1,4 @@
-import axios from 'axios'; // Използваме axios за изпращане на заявки към бекенда
+import axios from 'axios'; 
 import React, { useState } from 'react';
 import ReservationForm from '../ReservationForm/ReservationForm';
 const TennisCourt = ({ name, price, playTime, stadium, gameHour, image }) => {
@@ -11,16 +11,16 @@ const TennisCourt = ({ name, price, playTime, stadium, gameHour, image }) => {
 
   const handleReservationSubmit = async (reservationData) => {
     try {
-      // Вашата логика за изпращане на резервация към бекенда
+     
       await axios.post('/api/reservation', reservationData);
       console.log('Резервацията е изпратена:', reservationData);
-      // Изпращане на съобщение до имейла
+     
       await axios.post('/api/send-email', {
         recipient: reservationData.email,
         subject: 'Резервация на час',
         body: `Вашият час за тенис на корт "${name}" на ${gameHour} е успешно резервиран.`,
       });
-      // Затваряне на формата след успешна резервация
+   
       setShowForm(false);
       setReservationSuccess(true);
     } catch (error) {
