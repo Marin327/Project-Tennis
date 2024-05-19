@@ -10,12 +10,12 @@ const ReservationForm = ({ courtName, selectedTime, onReservationSubmit }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Проверка на валидност на данните преди изпращане към backend
+
     if (name.trim() === '' || phoneNumber.trim() === '' || email.trim() === '' || message.trim() === '') {
       alert('Моля, попълнете всички полета.');
       return;
     }
-    // Изпращане на данните за резервация към родителския компонент
+
     onReservationSubmit({
       courtName,
       selectedTime,
@@ -24,7 +24,7 @@ const ReservationForm = ({ courtName, selectedTime, onReservationSubmit }) => {
       userEmail: email,
       userMessage: message
     });
-    // Изчистване на полетата след изпращане на резервацията
+ 
     setName('');
     setPhoneNumber('');
     setEmail('');
