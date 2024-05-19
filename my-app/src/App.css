@@ -1,4 +1,5 @@
-/* App.css */
+/* App */
+
 .App {
   display:flow-root;
   flex-direction: column;
@@ -6,7 +7,7 @@
 }
 
 
-/* Header.css */
+/* Header */
 
 header {
   background-color: #054e8ffe; 
@@ -34,7 +35,8 @@ nav ul li a:hover {
   color: #c0dcc8; 
 }
 
-/* Contact.css */
+
+/* Contact */
 
 .contact-container {
   background-color: #f9f9f9;
@@ -98,7 +100,10 @@ nav ul li a:hover {
 .back-button:hover {
   background-color: #1a75ff;
 }
+
+
 /* News */
+
 
 .news-training-container h2 {
   font-size: 24px;
@@ -158,7 +163,9 @@ nav ul li a:hover {
   background-color: #0056b3;
 }
 
+
 /* NewsDetails */
+
 
 .news-details-container {
   width: fit-content;
@@ -214,6 +221,7 @@ nav ul li a:hover {
 
 
 /* TournamentsCalendar */
+
 
 .tournament-calendar {
   max-width: 600px;
@@ -272,7 +280,9 @@ nav ul li a:hover {
   background-color: #9781b2;
 }
 
+
 /* MatchResults */
+
 
 .match-results-container {
   background-color: #f9f9f9;
@@ -384,7 +394,11 @@ table tr:hover {
     right: -700px; 
   }
 
+
+
  /*TennisPlayer */
+
+
  .tennis-players-container {
   text-align: center;
   padding: 20px;
@@ -447,6 +461,7 @@ table tr:hover {
 
 
 /* TennisCourt */
+
 
 .tennis-court {
   border: 1px solid #ccc;
@@ -513,6 +528,7 @@ table tr:hover {
 
 /* TennisCourtsList */
 
+
 .tennis-courts-list {
   max-width: 800px;
   margin: 0 auto;
@@ -575,7 +591,9 @@ table tr:hover {
   background-color: #0056b3;
 }
 
+
 /* ReservationForm */
+
 
 .reservation-form {
   background-color: #fff;
@@ -646,7 +664,10 @@ table tr:hover {
   animation: slideIn 0.5s ease;
 }
 
+
 /* Home */
+
+
 .home {
   position: relative;
   height: 100vh; 
@@ -742,7 +763,10 @@ table tr:hover {
   }
 }
 
-/* TrainingSection.css */
+
+/* TrainingSection */
+
+
 .training-section {
   margin: 20px 0;
 }
