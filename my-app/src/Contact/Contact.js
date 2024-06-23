@@ -9,7 +9,7 @@ const Contact = () => {
       <h3>За всички запитвания, предложения или нужда от помощ.</h3>
       <p>
         Имейл: <a href="mailto:info@fitnesdeluxe&spa.com">info@fitnesdeluxe&spa.com</a><br />
-        Телефон: +359 89 708 2919<br />
+        Телефон: 8888 777777<br />
         Адрес: ул. Главна 123, София, България
       </p>
       <div className="social-links">
